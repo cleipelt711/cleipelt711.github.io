@@ -1,46 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- This file is named index.html so it will automatically be opened
-         when the web server is pointed to the directory containing this file.
-    -->
 
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal website of Connor Leipelt. Projects, interests, and contact info.">
-    <meta name="keywords" content="Connor Leipelt, projects, GitHub, personal website">
     <title>Connor Leipelt</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-    </style>
+     <link rel="stylesheet" href="leipeltpage.css">
 </head>
 
 
 <body>
-    
-    <h1>Hello! Welcome to my personal page!</h1>
-    <p>Here you will be able to see all of my projects and current interests!
-        Below are linked are some of my past projects
-    </p>
+<div class="content">
+<div id="header">
+<div class="header">
+    <h1>Connor Leipelt</h1>
+</div>
+</div>
 
-    <h2>Projects</h2>
+     
+<section id="header">
+<div class="intro-container">
+    <img src="connorheadshot.jpg" alt="Connor's headshot">
+    <div class="intro">
+        <p>Welcome!
+            <br>
+            <br>
+            <br>My name is Connor Leipelt, and this is my personal webpage. 
+            <br>
+            <br>I am an applied mathematician, and my specialization is computational biology, applying
+            machine learning and 
+            <br>mathematical modeling techniques to biomedical data--in particular to the growth and treatment of cancer.
+            <br>
+            <br>Here you will find my academic background, as well as my various mathematical and computational projects.
+            <br>
+            <br>Please navigate through the various sections below to find my academic background, research projects, CV, and contact information.
+            <br>
+            <br>
+            <br>Thank you, and don't hesitate to reach out!
+        </p>
+    </div>
+</div>
+</section>
+
+<br>
+    <section id="education">
+    <div id="education">
+    <div class="box">
+    <h2>Education</h2>
+        <h3>MS in Applied Math, UMASS Amherst 2023-2025</h3>
+            <p>My area of specialization is computational biology/oncology,
+                as well as machine learning, modeling, dynamical systems, and harmonic and Fourier analysis.
+                <br>Involvements include: CALC I and II Instructor, two-time Graduate Research Assistantship
+            </p>
+<br>
+        <h3>BS in Mathematics, Cal Poly SLO 2019-2023</h3>
+            <p>Minor in Philosophy
+            <br>Involvements include: FROST Research Fellow, Methods of Proofs Workshop Facilitator, Undergraduate Research Assistant, Resident Advisor, Association of Women in Math member, Putnam Exam two-time participant</p>
+    </div>
+    </div>
+    </section>
+<br>
+    <section id="research">
+    <div class="box">
+    <h2>Selected Academic Projects</h2>
     <ul>
-        <li>Link to first project.</li>
-        <li>Link to second project.</li>
-    </ul>
+        <li><a href="https://github.com/cleipelt711/Modeling-the-Growth-of-Cancerous-Tumors/blob/main/Math_690_Final_Project.pdf" target="_blank">Modeling the Growth of Cancerous Tumors </a> </li>
+        <li><a href="https://github.com/cleipelt711/Unsupervised-Learning-of-Cancer-Data/blob/main/Math_590_Final_Project.pdf" target="_blank">Unsupervised Learning of Cancer Data </a> </li>
+        <li><a href="https://github.com/cleipelt711/Modeling-Epidemics-with-Seasonal-Components-Gives-Rise-to-Chaos/blob/main/Math_645_Final_Project_TurnIn.pdf" target="_blank">Modeling Modeling Epidemics with Seasonal Components Gives Rise to Chaos </a> </li>
+        <li><a href="https://github.com/cleipelt711/Probabilistic-Methods-for-NLSE/blob/main/M790_Probabilistic_Methods.pdf" target="_blank">Probablistic Methods for NSLE </a> </li>
 
-    <h3>Contacts</h3>
-    <p>
-        <ul>
-            <li><a href="mailto:cleipelt2019@gmail.com">Email</a> </li>
-            <li><a href="https://www.linkedin.com/in/connor-leipelt/">LinkedIn</a> </li>
-            <li><a href="https://github.com/cleipelt711">Github</a></li>
-        </ul>
-    </p>
+
+    </ul>
+    </div>
+    </section>
+<br>
+    <section id="cv">
+    <div class="box">
+    <h2>CV</h2>
+        <div class="pdf-container">
+        <embed 
+            src="Leipelt_November_2025_CV-1.pdf" 
+            type="application/pdf" 
+            width="50%" 
+            height="700px"
+             />
+        </div>
+        <p>
+        <a href="Leipelt_November_2025_CV.pdf" target="_blank">Download CV (PDF)</a>
+</p>
+    </div>
+    </section>
+<br>
+    <!-- <section id="contact">
+    <div id="contact">
+    <div class="box">
+    <h2>Contact</h2>
+        <p>
+            <ul class="contact">
+                <li><a href="mailto:cleipelt2019@gmail.com" target="_blank">Email</a> </li>
+                <li><a href="https://www.linkedin.com/in/connor-leipelt/" target="_blank">LinkedIn</a> </li>
+                <li><a href="https://github.com/cleipelt711" target="_blank">Github</a></li>
+            </ul>
+        </p>
+    
+    </div>
+    </div>
+    </section> -->
+</div>
+
+<div class="topnav" id="myTopnav">
+  <nav>
+    <a href="#header">Home</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research Projects</a>
+    <a href="#cv">CV</a>
+
+    <!-- Contact dropdown -->
+    <button class="contact-toggle">
+      Contact <span class="caret">▸</span>
+    </button>
+
+    <div class="subnav">
+      <a href="mailto:cleipelt2019@gmail.com" target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/connor-leipelt/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/cleipelt711" target="_blank">Github</a>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll('.topnav a[href^="#"]');
+
+  window.addEventListener("scroll", () => {
+    let current = null;
+    let closestDistance = Infinity;
+
+    sections.forEach(section => {
+      const distance = Math.abs(
+        section.offsetTop - window.pageYOffset
+      );
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === "#" + current
+      );
+    });
+  });
+</script>
+
+<script>
+  const toggle = document.querySelector(".contact-toggle");
+  const subnav = document.querySelector(".subnav");
+  const caret = document.querySelector(".caret");
+
+  toggle.addEventListener("click", () => {
+    subnav.classList.toggle("open");
+    caret.classList.toggle("open");
+  });
+</script>
+
 </body>
 
 
